@@ -19,7 +19,11 @@ export default function Home() {
           onError={() => setVideoFailed(true)}
         />
       ) : (
-        <Image className="absolute top-0 left-0 z-0 h-screen w-full object-cover" src={alternativeBackground} alt="" />
+        <Image
+          className="absolute top-0 left-0 z-0 h-screen w-full object-cover opacity-20"
+          src={alternativeBackground}
+          alt=""
+        />
       )}
 
       <div className="absolute inset-0 bg-[linear-gradient(20deg,rgba(0,0,0,0.8)_10%,transparent)]"></div>
